@@ -18,3 +18,20 @@ const diasNome = ["Domingo","Segunda","Terça","Quarta","Quinta","sexta","sabado
 let diasEscrito = diasNome[data.getDay()];
 
 console.log(diasEscrito);
+
+//PEGAR HORA
+let hora =data.getHours();
+
+//PERGAR MINUTOS
+let minutos =data.getMinutes();
+
+//PERGAR SEGUNDOS
+let segundo = data.getSeconds();
+
+//PERGAR MILISEGUNDOS
+let miliSegundo = data.getMilliseconds();
+
+
+//PERGAR DATA PADRAO
+let dataBR = data.toLocaleString('pt-BR',{dateStyle:'short'});
+console.log(dataBR);
